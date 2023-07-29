@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Calculator</title>
+</head>
+<body>
+    <h2>Enter 5 marks:</h2>
+    <form id="marksForm">
+        <input type="number" name="mark1" required><br>
+        <input type="number" name="mark2" required><br>
+        <input type="number" name="mark3" required><br>
+        <input type="number" name="mark4" required><br>
+        <input type="number" name="mark5" required><br>
+        <input type="button" value="Calculate" onclick="calculateAverage()">
+    </form>
+
+    <script>
+        function calculateAverage() {
+            const form = document.getElementById("marksForm");
+            const marks = [
+                parseInt(form.mark1.value),
+                parseInt(form.mark2.value),
+                parseInt(form.mark3.value),
+                parseInt(form.mark4.value),
+                parseInt(form.mark5.value)
+            ];
+
+            const total = marks.reduce((acc, mark) => acc + mark, 0);
+            const average = total / marks.length;
+
+            alert(`Total marks: ${total}\nAverage marks: ${average.toFixed(2)}`);
+
+            if (average > 30) {
+                alert("Congrats! You passed");
+            } else {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+</body>
+</html>
