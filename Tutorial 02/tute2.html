@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Application form</title>
+</head>
+<body>
+ <center>
+ <div style="border:2px solid black">
+ <h1><center>Application Form</center></h1>
+ 
+ <center><h2>Position:<span style=color:red>Software Engineer</span></h2></center>
+ </div>
+ </center>
+ <br>
+ <table>
+ <tr>
+ <form name="g" method="post" action="new.php"> </form>
+ <td>First Name:
+ <input type="text" name="un" ></td>
+ </tr>
+ <tr>
+ <td><form action="/action_page.php">
+ <label for="birthday">Birthday:</label>
+ <input type="date" id="birthday" name="birthday">
+ </form></td>
+ </tr>
+ <tr>
+ <form name="g" method="post" action="new.php"> </form>
+ <td>Phone Number:
+ <input type="text" name="un" ></td>
+ </tr>
+ </table>
+ Gender
+ <input type="radio" name="gen" value="M">M
+ <input type="radio" name="gen" value="F">F
+ <form action="/action_page.php">
+ <label for="cars">Hight level of education:</label>
+ <select name="cars" id="cars">
+ <option value="volvo">Collage</option>
+ <option value="saab">University</option>
+ <option value="opel">Bachelor Degree</option>
+ <option value="audi">Master Degree</option>
+ </select>
+ <br>
+</form>
+ <form action="/action_page.php">
+ <label for="myfile">CVs:</label>
+ <input type="file" id="myfile" name="myfile"><br><br>
+</form>
+ <center><form>
+ <input type="checkbox" name="ol" value="1">I agree to the terms and conditions.
+ </form>
+ <form>
+ <input type="submit">
+ <input type="reset">
+ </form></center>
+</body>
+</html>
