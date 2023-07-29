@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial</title>
+</head>
+<body>
+    <h2>Enter  NIC Number:</h2>
+    <input type="text" id="nicNumberInput">
+    <button onclick="extractYearOfBirth()">Get Year of Birth</button>
+
+    <script>
+        function extractYearOfBirth() {
+            const nicNumber = document.getElementById("nicNumberInput").value;
+            const yearOfBirth = nicNumber.substring(0, 4);
+
+            if (isNaN(yearOfBirth)) {
+                alert("Invalid NIC number! Please enter a valid NIC number.");
+            } else {
+                alert(`Year of Birth: ${yearOfBirth}`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial</title>
+</head>
+<body>
+    <h2> Operations</h2>
+
+    <script>
+        function performMathOperations() {
+            const n1 = parseFloat(prompt("Enter the first number:"));
+            const n2 = parseFloat(prompt("Enter the second number:"));
+
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Invalid input! Please enter valid numbers.");
+                return;
+            }
+
+            const additionResult = n1 + n2;
+            const subtractionResult = n1 - n2;
+            const divisionResult = n1 / n2;
+            const multiplicationResult = n1 * n2;
+
+            alert(`Addition: ${additionResult}\nSubtraction: ${subtractionResult}\nDivision: ${divisionResult}\nMultiplication: ${multiplicationResult}`);
+        }
+
+       
+        performMathOperations();
+    </script>
+</body>
+</html>
